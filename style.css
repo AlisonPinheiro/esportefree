@@ -1316,9 +1316,12 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
     display: block;
   }
 
-  .header-main-menu .menu{
+  .header-main-menu .acmethemes-nav{
 	width: 100%;
 	padding: 50px 0;
+  }
+  .main-navigation .menu {
+	flex-direction: column;
   }
   .header-wrapper .menu li{
 	width: 100%;

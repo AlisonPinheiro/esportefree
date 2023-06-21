@@ -203,8 +203,8 @@ if (!function_exists('supermag_header')):
                         <div class="header-main-menu ">
                             <?php
                             wp_nav_menu(array('theme_location' => 'primary', 'container' => 'div', 'container_class' => 'acmethemes-nav'));
-                            if (!has_nav_menu('primary')) {
-                                echo " <button class='js-toggle-menu header-mobile__button header-mobile__button--close'>
+
+                            echo " <button class='js-toggle-menu header-mobile__button header-mobile__button--close'>
                                 <svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='50' height='50' viewBox='0 0 50 50'>
                                 <path d='M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z'></path>
                                 </svg>
@@ -212,7 +212,7 @@ if (!function_exists('supermag_header')):
                             
                             </div>
                             <div class='header-mobile__overlay js-toggle-menu'></div>";
-                            }
+
 
                             if (isset($supermag_customizer_all_values['supermag-menu-show-search']) && $supermag_customizer_all_values['supermag-menu-show-search'] == 1):
 
