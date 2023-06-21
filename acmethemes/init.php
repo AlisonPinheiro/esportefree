@@ -66,8 +66,6 @@ require_once supermag_file_directory('acmethemes/hooks/header.php');
 
 require_once supermag_file_directory('acmethemes/hooks/social-links.php');
 
-require_once supermag_file_directory('acmethemes/hooks/dynamic-css.php');
-
 require_once supermag_file_directory('acmethemes/hooks/footer.php');
 
 require_once supermag_file_directory('acmethemes/hooks/comment-forms.php');
