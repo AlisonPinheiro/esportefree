@@ -911,6 +911,10 @@ main {
   display: flex;
 }
 
+.custom-logo-link{
+	display: flex;
+}
+
 /***** Breaking news *****/
 .bn-wrapper {
   background: none;
