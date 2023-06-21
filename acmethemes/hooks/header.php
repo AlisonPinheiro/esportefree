@@ -160,7 +160,7 @@ if (!function_exists('supermag_header')):
 
 
                         <?php if ('disable' != $supermag_customizer_all_values['supermag-header-id-display-opt']): ?>
-                            <div class="site-logo">
+                            
                                 <?php
                                 if ('logo-only' == $supermag_customizer_all_values['supermag-header-id-display-opt']):
                                     if (function_exists('the_custom_logo')):
@@ -192,7 +192,7 @@ if (!function_exists('supermag_header')):
                                 <?php endif;
                                     endif;
                                 endif; ?>
-                            </div><!--site-logo-->
+                            <!--site-logo-->
                         <?php endif;
 
                         ?>
