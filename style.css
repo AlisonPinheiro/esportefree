@@ -899,12 +899,12 @@ object {
 \*-----------------*/
 
 .site-header {
-  border-bottom: 4px solid var(--primary);
+  background-color: var(--primary);
   position: sticky;
   z-index: 3;
 }
-main{
-	z-index: 2;
+main {
+  z-index: 2;
 }
 
 .header-container {
@@ -985,8 +985,8 @@ li.bn-content {
 .site-branding {
   padding: 15px 0 9px;
 }
-.site-logo{
-	padding-right: 20px;
+.site-logo {
+  padding-right: 20px;
 }
 .site-logo.float-left > a {
   display: inline-block;
@@ -1105,17 +1105,18 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
   width: 100%;
 }
 .header-wrapper .menu li a {
-  color: #2d2d2d;
+  color: #fff;
   display: block;
   font-weight: normal;
   line-height: 48px;
   padding: 0 15px;
   position: relative;
   transition: 0.3s;
+  text-transform: uppercase;
 }
 .header-wrapper .menu li a:hover {
-	background-color: var(--primary);
-	color: #fff;
+  background-color: var(--primary);
+  color: #fff;
 }
 .acmethemes-nav ul li.menu-item-has-children::after {
   -moz-border-bottom-colors: none;
@@ -1244,8 +1245,8 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
   }
 }
 .header-main-menu {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 /* Portrait tablet to landscape and desktop */
 @media screen and (max-width: 992px) {
