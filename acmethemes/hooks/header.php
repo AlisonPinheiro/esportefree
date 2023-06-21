@@ -189,9 +189,6 @@ if (!function_exists('supermag_header')):
                                     if ('title-and-tagline' == $supermag_customizer_all_values['supermag-header-id-display-opt']):
                                         $description = get_bloginfo('description', 'display');
                                         if ($description || is_customize_preview()): ?>
-                                    <p class="site-description">
-                                        <?php echo esc_html($description); ?>
-                                    </p>
                                 <?php endif;
                                     endif;
                                 endif; ?>
@@ -209,30 +206,7 @@ if (!function_exists('supermag_header')):
                                 if (!has_nav_menu('primary')) {
                                     echo "</div>";
                                 }
-                                if (1 == $supermag_customizer_all_values['supermag-enable-random-post']) {
-                                    $sticky = get_option('sticky_posts');
-                                    $supermag_random_post_query = new WP_Query(
-                                        array(
-                                            'orderby' => 'rand',
-                                            'posts_per_page' => 1,
-                                            'ignore_sticky_posts' => true,
-                                            'post__not_in' => $sticky
-                                        )
-                                    );
-                                    if ($supermag_random_post_query->have_posts()) {
-                                        echo '<div class="random-post">';
-                                        while ($supermag_random_post_query->have_posts()) {
-                                            $supermag_random_post_query->the_post();
-                                            ?>
-                                            <a title="<?php echo esc_attr(get_the_title()) ?>" href="<?php the_permalink() ?>">
-                                                <i class="fa fa-random icon-menu"></i>
-                                            </a>
-                                            <?php
-                                        }
-                                        echo '</div>'; /*random-post*/
-                                    }
-                                    wp_reset_postdata();
-                                }
+
                                 if (isset($supermag_customizer_all_values['supermag-menu-show-search']) && $supermag_customizer_all_values['supermag-menu-show-search'] == 1):
 
                                     $supermag_menu_search_type = $supermag_customizer_all_values['supermag-menu-search-type'];

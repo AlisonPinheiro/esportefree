@@ -41,6 +41,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, c
 --------------------------------------------------------------*/
 :root {
   --primary: #f6ac01;
+  --black: #2d2d2d;
 }
 html {
   -ms-text-size-adjust: 100%;
@@ -421,6 +422,7 @@ i.fa {
   list-style: none;
   margin: 0;
   padding-left: 0;
+  display: flex;
 }
 .main-navigation ul li {
   position: relative;
@@ -899,6 +901,10 @@ object {
 .site-header {
   border-bottom: 4px solid var(--primary);
   position: sticky;
+  z-index: 3;
+}
+main{
+	z-index: 2;
 }
 
 .header-container {
@@ -1084,6 +1090,7 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
 .header-wrapper .main-navigation {
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .header-wrapper .menu > li.current-menu-item > a:before,
@@ -1162,7 +1169,7 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
 }
 /*search type*/
 .icon-menu {
-  color: #ffffff;
+  color: var(--black);
   cursor: pointer;
   float: right;
   font-size: 20px;
@@ -1236,7 +1243,10 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
     padding: 0 5px;
   }
 }
-
+.header-main-menu {
+	display: flex;
+	justify-content: space-between;
+}
 /* Portrait tablet to landscape and desktop */
 @media screen and (max-width: 992px) {
   /*** HEADER ***/
