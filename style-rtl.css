@@ -476,15 +476,6 @@ i.fa{
 	margin-right: auto;
 	margin-left: auto;
 }
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-.clear{
-	clear:both;
-}
-.clearfix:after, .clearfix:before{ display:table; content:""}
-.clearfix:after{ clear:both}
-.clearfix{*zoom:1} *{box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
 
 /*--------------------------------------------------------------
 # Widgets

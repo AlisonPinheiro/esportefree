@@ -13,7 +13,7 @@ if ( ! function_exists( 'supermag_after_content' ) ) :
     function supermag_after_content() {
       ?>
         </div><!-- #content -->
-        </div><!-- content-wrapper-->
+    </main><!-- content-wrapper-->
     <?php
     }
 endif;
