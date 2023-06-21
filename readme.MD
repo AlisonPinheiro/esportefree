@@ -1,4 +1,4 @@
-=== SuperMag ===
+=== EsporteFree ===
 
 Contributors: acmethemes
 Tags: blog, news, e-commerce, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, custom-logo, editor-style, footer-widgets, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, wide-blocks
